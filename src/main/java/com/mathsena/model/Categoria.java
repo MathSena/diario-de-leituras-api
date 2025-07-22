@@ -1,4 +1,9 @@
 package com.mathsena.model;
 
-public class Categoria {
+public enum Categoria {
+  TECNICO,
+  FICCAO,
+  BIOGRAFIA,
+  FILOSOFIA,
+  AUTOAJUDA
 }
