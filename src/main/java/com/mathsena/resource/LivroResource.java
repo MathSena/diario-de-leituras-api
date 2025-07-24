@@ -22,13 +22,11 @@ public class LivroResource {
 
   private static final Logger LOG = Logger.getLogger(LivroResource.class);
 
-
   @GET
   public List<Livro> listarTodos() {
     LOG.info("Listando todos os livros");
     return Livro.listAll();
   }
-
 
   @POST
   @Transactional
@@ -43,7 +41,6 @@ public class LivroResource {
     livro.persist();
     return Response.status(Response.Status.CREATED).entity(livro).build();
   }
-
 
   @PUT
   @Path("/{id}")
@@ -97,5 +94,12 @@ public class LivroResource {
 
     livro.delete();
     return Response.noContent().build();
+  }
+
+  @GET
+  @Path("/ranking")
+  public List<Livro> getRanking() {
+    // Busca livros com status LIDO, ordenados pela nota em ordem decrescente
+    return Livro.list("status = 'LIDO' ORDER BY nota DESC");
   }
 }
