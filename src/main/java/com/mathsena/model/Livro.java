@@ -37,4 +37,6 @@ public class Livro extends PanacheEntityBase {
 
   @OneToMany(mappedBy = "livro", cascade = CascadeType.ALL, orphanRemoval = true)
   public List<Reflexao> reflexoes;
+
+  public String capaUrl;
 }
