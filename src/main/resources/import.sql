@@ -11,6 +11,6 @@ VALUES (3000, 'O Problema dos 3 Corpos', 'Cixin Liu', 'FICCAO', 'LENDO', '2024-0
 
 -- INSERÇÕES NA NOVA TABELA Reflexao
 -- Associamos cada reflexão a um livro usando o 'livro_id'
-INSERT INTO Reflexao(id, conteudo, livro_id) VALUES (1, 'Um livro incrivelmente divertido e inteligente.', 1);
-INSERT INTO Reflexao(id, conteudo, livro_id) VALUES (2, 'A nota 42 faz todo o sentido agora!', 1);
-INSERT INTO Reflexao(id, conteudo, livro_id) VALUES (3, 'Início muito promissor...', 3);
+INSERT INTO Reflexao(id, conteudo, livro_id) VALUES (1, 'Um livro incrivelmente divertido e inteligente.', 1001);
+INSERT INTO Reflexao(id, conteudo, livro_id) VALUES (2, 'A nota 42 faz todo o sentido agora!', 1001);
+INSERT INTO Reflexao(id, conteudo, livro_id) VALUES (3, 'Início muito promissor...', 3000);
