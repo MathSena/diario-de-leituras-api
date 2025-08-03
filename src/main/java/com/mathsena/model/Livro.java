@@ -2,6 +2,7 @@ package com.mathsena.model;
 
 import io.quarkus.hibernate.orm.panache.PanacheEntityBase;
 import jakarta.persistence.CascadeType;
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.EnumType;
 import jakarta.persistence.Enumerated;
@@ -25,6 +26,9 @@ public class Livro extends PanacheEntityBase {
 
   public String titulo;
   public String autor;
+
+  @Column(length = 2000)
+  public String sinopse;
 
   @Enumerated(EnumType.STRING)
   public Categoria categoria;

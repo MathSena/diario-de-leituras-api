@@ -5,5 +5,7 @@ public enum Categoria {
   FICCAO,
   BIOGRAFIA,
   FILOSOFIA,
-  AUTOAJUDA
+  AUTOAJUDA,
+  CLASSICO,
+  NAO_FICCAO
 }
